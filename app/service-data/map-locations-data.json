@@ -1,0 +1,28 @@
+[{
+	"_id": 1,
+	"slideMap": "Aliso_CA@2x.jpg",
+	"mapTitle": "Aliso Viejo, Ca",
+	"markerTextTop": "26501 Aliso Creek Road",
+	"markerTextBottom": "Aliso Viejo, CA 92656",
+	"clockTextTop": "Sunday 7 a.m.-9 p.m.",
+	"clockTextBottom": "Monday-Saturday 6 a.m.-10 p.m.",
+	"phoneNumber": "(949) 616-7725"
+}, {
+	"_id": 2,
+	"slideMap": "Burbank_CA@2x.jpg",
+	"mapTitle": "Burbank, Ca",
+	"markerTextTop": "2000 West Empire Avenue",
+	"markerTextBottom": "Burbank, CA 91504",
+	"clockTextTop": "Sunday 7 a.m.-9 p.m.",
+	"clockTextBottom": "Monday-Saturday 6 a.m.-10 p.m.",
+	"phoneNumber": "(818) 557-2300"
+}, {
+	"_id": 3,
+	"slideMap": "Livermore_CA@2x.jpg",
+	"mapTitle": "Livermore, Ca",
+	"markerTextTop": "4255 First Street",
+	"markerTextBottom": "Livermore, CA 94551",
+	"clockTextTop": "Sunday 7 a.m.-9 p.m.",
+	"clockTextBottom": "Monday-Saturday 6 a.m.-10 p.m.",
+	"phoneNumber": "(925) 245-2440"
+}]

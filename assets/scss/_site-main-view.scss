@@ -1,0 +1,192 @@
+.site-hero {
+  display: none;
+  @media(min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 350px;
+    background: url('../images/hero/hero.jpg') no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+.site-main {
+  @media(min-width: 768px) {
+    position: relative;
+  }
+  &-section {
+    @media(min-width: 768px) {
+      position: relative;
+      max-width: 768px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    @media(min-width: 1200px) {
+      max-width: 1200px;
+    }
+    &-element {
+      &.intro-column {
+        @media(min-width: 768px) {
+          position: relative;
+          float: left;
+          width: 35%;
+        }
+        .block-column-wrap-bg-image {
+          min-height: 390px;
+          background: url('../images/about/SmartProducts@2x.jpg') no-repeat;
+          background-size: 400px;
+          background-position: bottom center;
+          @media(min-width: 1200px) {
+            background-size: 430px;
+          }
+        }
+        .block-column-wrap {
+          .para-text-grey {
+            padding: 15px 0 30px 0;
+          }
+        }
+      }
+      &.secondary-column {
+        @media(min-width: 768px) {
+          position: relative;
+          float: left;
+          width: 65%;
+          padding: 350px 0 0 0;
+        }
+        .block-column-wrap-bg-image {
+          &.image-one {
+            min-height: 300px;
+            background: url('../images/about/Nest@2x.jpg') no-repeat;
+            background-size: cover;
+            background-position: top center;
+            @media(min-width: 768px) {
+              min-height: 390px;
+            }
+          }
+          &.image-two {
+            min-height: 300px;
+            background: url('../images/about/SmartProducts@2x.jpg') no-repeat;
+            background-size: cover;
+            background-position: top center;
+          }
+        }
+      }
+      .block-column-wrap-transparent {
+        position: relative;
+        min-height: 350px;
+        margin: 0;
+        padding: 0;
+        background: url('../images/hero/hero.jpg') no-repeat;
+        background-size: cover;
+        background-position: top center;
+        background-color: $lightblue;
+        @media(min-width: 768px) {
+          min-height: auto;
+          background: transparent;
+        }
+        .opaque-block {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          margin: 0;
+          padding: 20px;
+          background-color: $opaqueGrey;
+          @media(min-width: 768px) {
+            position: relative;
+            top: auto;
+            bottom: auto;
+            top: 0;
+            padding: 75px 20px 90px 20px;
+          }
+          h2 {
+            color: $white;
+          }
+          p {
+            padding: 3px 0 0 0;
+            color: $white;
+            letter-spacing: 0.8px;
+            line-height: 27px;
+            font-size: 3rem;
+            font-weight: 400;
+            @media(min-width: 768px) {
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .block-column-wrap {
+        margin: 0;
+        padding: 30px 20px;
+        .para-text-blue {
+          margin: 0 0 25px;
+        }
+        .para-text-grey {
+          padding: 15px 0 10px 0;
+        }
+        &.home-vector {
+          min-height: 480px;
+          background: url('../images/about/House@2x.jpg') no-repeat;
+          background-size: contain;
+          background-position: bottom center;
+          @media(min-width: 768px) {
+            min-height: 475px;
+            background: url('../images/about/House@2x.jpg') $white no-repeat;
+            background-size: 245px;
+            background-position: bottom center;
+            // background-color: $white !important;
+          }
+        }
+      }
+    }
+  }
+  .site-main-section-store-locations {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 635px;
+    background: url('../images/header/pattern-dark.png');
+    background-position: bottom center;
+    background-color: $lightgrey2;
+    clear: both;
+    .info-title-block {
+      position: relative;
+      margin: 0;
+      padding: 50px 20px 20px 20px;
+      min-height: 170px;
+      background-color: $white;
+      h1 {
+        color: $lightblue;
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 400;
+      }
+    }
+    .map-loading-block {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: $blue;
+      z-index: 6;
+      .loading-dialog-block {
+        position: relative;
+        @include vertical-alignment;
+        @mixin loadingInfoElements {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+          padding: 0;
+          color: $white;
+        }
+        i, span {
+          @include loadingInfoElements;
+        }
+      }
+    }
+  }
+}

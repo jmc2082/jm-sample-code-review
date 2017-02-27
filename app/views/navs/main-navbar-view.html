@@ -1,0 +1,23 @@
+<aside class="site-header-nav-left">
+    <a class="logo-brand" href="/home">
+        <img src="/assets/images/header/logo.svg" alt="Smart Space">
+    </a>
+    <nav class="site-header-nav desktop">
+        <ul class="nav navbar-nav">
+            <li ng-repeat="item in nav.mainMenu">
+               <a ui-sref="{{ item.link }}">{{ item.title }}</a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+<aside class="site-header-nav-right">
+    <ul class="nav navbar-nav">
+        <li class="powered-by desktop">powered by <strong>b8ta</strong></li>
+        <li>
+            <a href="/cart">
+                <img src="/assets/images/header/cart.svg" alt="Smart Space">
+            </a>
+        </li>
+        <li><span>0</span></li>
+    </ul>
+</aside>

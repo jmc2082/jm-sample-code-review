@@ -1,0 +1,26 @@
+<section class="site-main-section">
+    <div class="cart-items-grid-wrapper">
+        <h2>Cart View</h2>
+        <ul class="results-block-ul">
+            <li ng-repeat="item in cart.cartArray">
+                <div class="contents-wrapper">
+                    <a ng-click="cart.openMealModal(item)">
+                        <img ng-src="assets/images/cart-items/{{ item.image }}" alt="{{ item.image }}">
+                    </a>
+                    <div class="info-box">
+                        <div class="botton-group-block">
+                            <button ng-click="cart.openCartModal(item)" class="rate">rate</button>
+                            <button class="share">share</button>
+                            <button class="favorite">favorite</button>
+                        </div>
+                        <div class="text-info-block">
+                            <span>{{ item.title | cut:true:30:' ...' }}</span>
+                        </div>
+                    </div>
+                </div>
+                <img class="list-spacer"
+                      ng-src="assets/images/list-spacer.png">
+            </li>
+        </ul>
+    </div>
+</section>

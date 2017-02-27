@@ -1,0 +1,33 @@
+{
+  "name": "jm-prototype",
+  "description": "UI prototype with angularjs v1.",
+  "main": "index.js",
+  "authors": [
+    "Joshua Mackey"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.2",
+    "angular-resource": "^1.6.2",
+    "angular-cookies": "^1.6.2",
+    "angular-sanitize": "^1.6.2",
+    "angular-touch": "^1.6.2",
+    "angular-ui-router": "^0.4.2",
+    "angular-route": "^1.6.2",
+    "angular-animate": "^1.6.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.6.0",
+    "angular-slick-carousel": "^3.1.7",
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7"
+  }
+}

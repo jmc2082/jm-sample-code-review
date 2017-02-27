@@ -1,0 +1,113 @@
+<div class="site-hero"></div>
+<section class="site-main-section">
+    <article class="site-main-section-element intro-column">
+        <div class="block-column-wrap-transparent">
+            <div class="opaque-block">
+                <h2>b8ta</h2>
+                <p>
+                    is about the <br>
+                    hero experience
+                </p>
+            </div>
+        </div>
+        <div class="block-column-wrap home-vector">
+            <h2 class="header-blue">about b8ta</h2>
+            <p class="para-text-grey">
+                While b8ta keeps the advertising offline, they continue to
+                track everything online.  Products get real-life versions of
+                online ads-
+            </p>
+            <p class="para-text-blue">
+                instead of clicks to websites, partners
+                get physical encounters with
+                customers for a measured period of
+                time.
+            </p>
+        </div>
+        <div class="block-column-wrap-bg-image desktop"></div>
+    </article>
+    <article class="site-main-section-element secondary-column">
+        <div class="block-column-wrap-bg-image image-one"></div>
+        <div class="block-column-wrap">
+            <p class="para-text-blue">
+                They put products on display out of the box,
+                that allow partners to digital message, and then
+                measure the in-person interactions vistors
+                have with it.
+            </p>
+            <p class="para-text-grey">
+                Every product's digital display offers all the information customers would
+                typically use their smartphone to research.
+            </p>
+            <p class="para-text-grey">
+                They encourage <span class="dark-gray-span">in-person discovery</span> and
+                <span class="dark-gray-span">hands-on experience</span>.  At b8ta,
+                their primary aim to increase awareness of brands and the recognition
+                of products.
+            </p>
+        </div>
+        <div class="block-column-wrap-bg-image image-two mobile"></div>
+    </article>
+</section>
+<section class="site-main-section-store-locations">
+    <article class="info-title-block">
+        <h1>B8ta is featuring these products in these specific stores:</h1>
+    </article>
+    <div class="locations-block-wrap" ng-init="main.getMapLocationsData()">
+        <div ng-if="main.vars.mapLoader" class="map-loading-block">
+            <div class="loading-dialog-block">
+                <i ng-if="!main.vars.errorMessage" class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                <span ng-if="!main.vars.errorMessage">Loading map locations...</span>
+                <div ng-if="main.vars.errorMessage" class="row alert alert-danger">
+                    <p>{{ main.vars.errorMessage }}</p>
+                </div>
+            </div>
+        </div>
+        <slick class="locations-slick" settings="main.slickConfig" ng-if="main.sliderLoaded">
+            <div class="location-item" ng-repeat="slide in main.locationSliderArray">
+                <div class="location-info-block">
+                    <div class="location-map-block">
+                        <span class="map-title">{{ slide.mapTitle }}</span>
+                        <img class="map-image" ng-src="assets/images/states/{{ slide.slideMap }}" alt="{{ slide.slideMap }}">
+                    </div>
+                    <div class="info-wrapper">
+                        <div class="inner-location-items">
+                            <section>
+                                <div class="image-wrapper">
+                                    <img class="location-icon" ng-src="assets/images/states/Marker.svg" alt="Marker Icon">
+                                </div>
+                                <div class="text-wrapper">
+                                    <span class="location-text-span">
+                                        {{ slide.markerTextTop }} <br>
+                                        {{ slide.markerTextBottom }}
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="image-wrapper">
+                                    <img class="location-icon" ng-src="assets/images/states/Clock.svg" alt="Clock Icon">
+                                </div>
+                                <div class="text-wrapper">
+                                    <span class="location-text-span">
+                                        {{ slide.clockTextTop }} <br>
+                                        {{ slide.clockTextBottom }}
+                                    </span>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="image-wrapper">
+                                    <img class="location-icon" ng-src="assets/images/states/Phone.svg" alt="Phone Icon">
+                                </div>
+                                <div class="text-wrapper">
+                                    <span class="location-text-span">
+                                        {{ slide.phoneNumber }}
+                                    </span>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </slick>
+    </div>
+</section>

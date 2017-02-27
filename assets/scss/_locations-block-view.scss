@@ -1,0 +1,122 @@
+.locations-block-wrap {
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 400px;
+  @media(min-width: 700px) {
+    padding: 0 0 30px 0;
+  }
+  @media(min-width: 768px) {
+    max-width: 768px;
+    width: 100%;
+  }
+  @media(min-width: 1200px) {
+    max-width: 1200px;
+    width: 100%;
+  }
+  // background-color: $lightblue;
+  z-index: 5;
+  .locations-slick {
+    .slick-list {
+      -webkit-box-shadow: 0px 13px 12px 5px $opaqueGrey;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+      -moz-box-shadow:    0px 13px 12px 5px $opaqueGrey;  /* Firefox 3.5 - 3.6 */
+      box-shadow:         0px 13px 12px 5px $opaqueGrey;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+      @media(min-width: 480px) {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+      }
+      .slick-track {
+        .slick-slide {
+          @media(min-width: 480px) {
+            padding: 0 5px 0 0;
+          }
+          .location-info-block {
+            .location-map-block {
+              position: relative;
+              min-height: 250px;
+              overflow: hidden;
+              .map-title {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                // min-height: inherit;
+                color: $white;
+                font-size: 2rem;
+                padding: 3px 30px;
+                background-color: $lightblue;
+                z-index: 8;
+              }
+              .map-image {
+                position: absolute;
+                top: 0;
+                z-index: 7;
+                width: 125%;
+                @media(min-width: 305px) {
+                  width: 100%;
+                }
+                @media(min-width: 480px) {
+                  width: 125%;
+                }
+                @media(min-width: 700px) {
+                  // width: 130%;
+                  width: 100%;
+                }
+                @media(min-width: 1200px) {
+                  top: -70px;
+                }
+              }
+            }
+            .info-wrapper {
+              background-color: $white;
+              .inner-location-items {
+                margin: 0;
+                padding: 0 30px;
+                section {
+                  position: relative;
+                  margin: 0;
+                  padding: 0;
+                  min-height: 75px;
+                  border-bottom: 1px solid $whitegrey;
+                  &:last-child {
+                    border: none;
+                  }
+                  .image-wrapper {
+                    position: relative;
+                    float: left;
+                    width: 20%;
+                    min-height: inherit;
+                    .location-icon {
+                      position: absolute;
+                      @include vertical-alignment;
+                      max-width: 20px;
+                    }
+                  }
+                  .text-wrapper {
+                    position: relative;
+                    float: left;
+                    width: 80%;
+                    min-height: inherit;
+                    .location-text-span {
+                      position: absolute;
+                      font-size: 1.1rem;
+                      color: $lightgrey;
+                      @include vertical-alignment;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .slick-dots {
+
+    }
+  }
+}
